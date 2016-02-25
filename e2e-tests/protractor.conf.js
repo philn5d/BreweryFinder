@@ -1,5 +1,5 @@
 exports.config = {
-  allScriptsTimeout: 11000,
+  allScriptsTimeout: 61000,
 
   specs: [
     '*.js'
@@ -16,7 +16,7 @@ exports.config = {
   framework: 'jasmine',
 
   jasmineNodeOpts: {
-    defaultTimeoutInterval: 30000
+    defaultTimeoutInterval: 60000
   },
-  seleniumArgs: ['-Dwebdriver.ie.driver=c:/IEDriverServer64.exe']
+  seleniumArgs: ['-Dwebdriver.ie.driver=c:/IEDriverServer.exe']
 };
