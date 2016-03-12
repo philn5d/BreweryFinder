@@ -5,12 +5,12 @@ exports.config = {
     '*.js'
   ],
 
-  capabilities: {        
-	'browserName': 'internet explorer',
-        'platform': 'ANY',
-        'version': '11'
-  },
-
+  multiCapabilities: [{
+  'browserName': 'firefox'
+}, {
+  'browserName': 'chrome'
+}],
+  directConnect:true,
   baseUrl: 'http://localhost:8000/app/',
 
   framework: 'jasmine',
@@ -18,5 +18,5 @@ exports.config = {
   jasmineNodeOpts: {
     defaultTimeoutInterval: 60000
   },
-  seleniumArgs: ['-Dwebdriver.ie.driver=c:/IEDriverServer.exe']
+  seleniumArgs: []
 };
